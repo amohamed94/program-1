@@ -1,0 +1,10 @@
+<project default="compile">
+<target name = "compile" depends="clean">
+	<javac srcdir="." destdir="."
+includeantruntime="false" fork="true"/>
+</target>
+
+<target name="clean">
+	<delete file="WebServer.class"/>
+</target>
+</project>
